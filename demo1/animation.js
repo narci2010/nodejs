@@ -28,17 +28,9 @@ setInterval(function(){
 	
 	count++;
 
-	// if(count === frames.length){
-	// 	count =0;
-	// }
-
 	count = count === frames.length ? 0:count;
 
 	process.stdout.write(frames[count]);
 
 },1000/15);
 
-
-// frames.forEach(function(item,index){
-// 	console.log(item + '  ' +index);
-// });
