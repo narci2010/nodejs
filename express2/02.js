@@ -1,0 +1,18 @@
+'use strict';
+
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
+const router = require('./router');
+
+const app = express();
+
+// 在express中，通过下面的固定语句来设置静态资源处理方式
+app.use('/public', express.static('public'));
+
+// 配置路由处理，加入路由容器
+app.use(router);
+
+app.listen(3000, '127.0.0.1', () => {
+  console.log('server is running at port 3000');
+});
