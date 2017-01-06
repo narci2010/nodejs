@@ -10,6 +10,13 @@ c) Node.js的特性是什么？
    事件驱动、非阻塞IO模型
 ```
 
+#### nodejs 社区
+
+- ```https://github.com/nodejs/node```
+- ```https://www.npmjs.com/```
+- ```http://npm.taobao.org/```
+
+
 #### cmd（Command）
 > 作用：这是一个终端，可以在里面把以前鼠标点点点的方式通过命令来让计算机帮你做一些事情
 
@@ -28,10 +35,16 @@ c) Node.js的特性是什么？
 #### nvm
 
 Node version Manager  这是一个Node.js的版本管理工具
-- nvm install 版本号
-- nvm uninstall 版本号
-- nvm use 版本号
-- nvm list|ls 查看当前已安装的所有的Node.js版本
+- ```https://github.com/creationix/nvm
+```
+
+- nvm（Node.js version manage）
+  + 管理和切换Node.js的版本的
+  + 例如 4.4.0  5.9.0
+  + nvm ls 查看所有已安装的Node.js版本
+  + nvm use [32]切换一个已安装的Node.js版本 注意：32位操作系统在后面加32
+  + nvm install 版本号 [32]  注意：32位操作系统在后面加32
+  + nvm uninstall 版本号 表示卸载一个已安装的指定版本
 
 #### REPL运行环境
 > Read Eval Print Loop
@@ -44,3 +57,10 @@ Node version Manager  这是一个Node.js的版本管理工具
 
 - 按住Ctrl 再按 c  两次，就可以退出REPL运行环境
 - 在REPL环境中输入 .exit 也可以退出REPL环境
+
+#### other
+```
+世界上第一个网站：http://info.cern.ch/hypertext/WWW/TheProject.html
+```
+
+

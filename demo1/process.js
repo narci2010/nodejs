@@ -1,8 +1,7 @@
 //console.log(process.arch);
-//console.log(process.argv);
+// console.log(process.argv);
 //console.log(process.version);
 //console.log(process.stdout);
-
 // process.stdout.write('\n'); // 输出换行
 
 //process.stdout.write('hello node.js'+ '\n');

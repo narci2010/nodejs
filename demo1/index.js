@@ -37,4 +37,4 @@ function myRquire(modulePath) {
 
 var result = myRquire('./add.js');
 
-console.log(result(1,2));
+console.log(result(1,2)); //3
