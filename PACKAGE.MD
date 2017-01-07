@@ -1,5 +1,5 @@
 ### PACKAGE
-
+> awesome  Tutorial
 #### nrm
 
 ```
@@ -8,7 +8,6 @@
 安装：npm install -g nrm
 
 ```
-
 #### CNPM
 > ```淘宝NPM镜像：http://npm.taobao.org/```
 
@@ -35,3 +34,6 @@
 
 #### markdown-it
 > 将markdown转换为html标签
+
+#### fs-extra  
+> fs扩展
