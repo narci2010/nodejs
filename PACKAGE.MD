@@ -25,3 +25,7 @@
 安装：npm install cheerio --save
 ```
 #### request
+
+```
+项目地址:https://www.npmjs.com/package/request
+``

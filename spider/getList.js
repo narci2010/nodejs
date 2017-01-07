@@ -1,8 +1,6 @@
 var request = require('request');
 var cheerio = require('cheerio');
 
-
-
 function getArticleList(url,callback) {
 
   // 在异步代码中，无法return，是得不到return的返回值的
