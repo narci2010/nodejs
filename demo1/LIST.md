@@ -1,0 +1,7 @@
+#### readme 
+
+- readFile
+
+- writeFile
+
+- writeFileSync

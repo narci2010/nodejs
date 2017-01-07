@@ -5,3 +5,6 @@ var fs = require('fs');
 // 如果文件不存在，直接创建，将数据写入
 // 如果文件已存在，内容会被覆盖掉
 fs.writeFileSync('./a.txt','aaa ');
+
+// console.log(__dirname);
+// console.log( __filename );

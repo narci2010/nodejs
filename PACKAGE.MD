@@ -25,7 +25,13 @@
 安装：npm install cheerio --save
 ```
 #### request
+> 简化的HTTP请求客户端
 
 ```
 项目地址:https://www.npmjs.com/package/request
 ``
+#### iconv-lite
+> 转码
+
+#### markdown-it
+> 将markdown转换为html标签

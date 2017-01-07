@@ -46,8 +46,8 @@ function test() {
  * 一种是普通的伪异步任务：
  * setTimeout(callback,delay[,arg][,…])
  * setInterval(callback,delay[,arg][],…)
- * process.nextTick(callback[,arg][,…])
- * setImmediate(callback[,arg][,…])
+ * process.nextTick(callback[,arg][,…]) : 会添加到当前事件循环队列的尾部，比 setImmediate 的优先级要高
+ * setImmediate(callback[,arg][,…]) : 会直接扔到 下一次事件循环队列的顶部
  *
  * 还是有Node.js原生提供的一些API：
  *  readFile、writeFIle、appendFile、mkdir.....
