@@ -193,3 +193,8 @@ F9  Resume
 Ctrl + F8  Toggle breakpoint
 Ctrl+Shift+F8  View breakpoints
 ```
+#### other
+
+```
+世界上第一个网站：http://info.cern.ch/hypertext/WWW/TheProject.html
+```

@@ -58,9 +58,5 @@ Node version Manager  这是一个Node.js的版本管理工具
 - 按住Ctrl 再按 c  两次，就可以退出REPL运行环境
 - 在REPL环境中输入 .exit 也可以退出REPL环境
 
-#### other
-```
-世界上第一个网站：http://info.cern.ch/hypertext/WWW/TheProject.html
-```
 
 
