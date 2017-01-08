@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>我的歌单 - {{title}}</title>
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>我的歌单<small>{{title}}</small></h1>
+    </div>
+    <div>
+      <a class="btn btn-success" href="/add">添加歌曲</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <table class="table table-hover table-striped">
+          <thead>
+            <tr>
+              <th>编号</th>
+              <th>音乐标题</th>
+              <th>歌手</th>
+              <th>时长</th>
+              <th>大小</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script type="text/template" id="template">
+    <% musicList.forEach(function(value){ %>
+      <tr>
+        <td class="active">
+          <%= value.id %>
+        </td>
+        <td>
+          <%= value.title %>
+        </td>
+        <td>
+          <%= value.singer %>
+        </td>
+        <td>
+          <%= value.time %>
+        </td>
+        <td>
+          <%= value.size %>
+        </td>
+        <td>
+          <a href="/edit?id=<%= value.id %>">编辑</a>
+          <a href="/remove?id=<%= value.id %>">删除</a>
+        </td>
+      </tr>
+      <%}) %>
+  </script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/bower_components/underscore/underscore.js"></script>
+  <script>
+  // 异步的获取数据，拼接html字符串，直接上DOM
+
+  //     var compiled = _.template("hello: <%= name %>");
+  // compiled({name: 'moe'});
+  // => "hello: moe"
+
+  var $template = $('#template');
+  var $tbody = $('#tbody');
+
+  function loadMusic() {
+    $.ajax({
+      url: 'http://127.0.0.1:3000/music',
+      type: 'get',
+      dataType: 'json',
+      success: function(data) {
+        //  { musicList:[] }
+        var musicList = data.musicList;
+        
+        // 编译模板，得到一个模板渲染函数
+        // 向渲染函数中注入数据，得到 html 字符串
+        // 将该字符串直接添加到DOM中
+        //console.log(musicList);
+        //onsole.log($template.html());
+        var compiled = _.template($template.html());
+        var htmlStr = compiled(data);
+        $tbody.append(htmlStr);
+      },
+      error: function() {
+        console.log('操作失败，请稍后重试');
+      }
+    });
+  }
+
+  loadMusic();
+  </script>
+</body>
+
+</html>
