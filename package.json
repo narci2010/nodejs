@@ -23,5 +23,8 @@
     "iconv-lite": "^0.4.15",
     "markdown-it": "^8.2.2",
     "request": "^2.79.0"
+  },
+  "dependencies": {
+    "mysql": "^2.12.0"
   }
 }

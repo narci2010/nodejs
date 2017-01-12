@@ -30,4 +30,16 @@
 12.hbs  Express.js模板引擎插件的Handlebars
 
 13.mysql mysql的node.js驱动程序
+
+14.body-parser
+
+15.xtpl  xtemplate
+
+16.ccap
+
+17.cookie-parser
+
+18.express-session
+
+19.jquery-validation
 ```
